@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <link href="ex_1_style.css" rel="stylesheet">
+
+  <title>Calcular Salário</title>
+</head>
+
+<body>
+  <h1>Calcular Salário</h1>
+  <form class="formClass" name="atualForm" method="POST" action="">
+    Digite o código do cargo:
+    <input type="text" name="codigo">
+    <br><br>
+    Digite o salário atual:
+    <input type="text" name="salarioAtual">
+    <br><br>
+    <input type="button" value="Calcular" onclick="calcular(atualForm.codigo.value, atualForm.salarioAtual.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+
+  <div id="resposta" style="display: none">
+    <h1>Reajustes</h1>
+    Cargo: <span id="cargo"></span>
+    <br>
+    Valor: <span id="valor"></span>
+    <br>
+    Novo Salário: <span id="novoSalario"></span>
+  </div>
+
+  <script src="ex_1_script.js"></script>
+</body>
+
+</html>

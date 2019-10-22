@@ -1,0 +1,24 @@
+.formClass {
+  padding: 10px;
+  background-color: blanchedalmond;
+  margin: 0 auto;
+  width: 400px;
+}
+
+body {
+  text-align: center;
+  color: brown;
+
+}
+
+#resposta {
+  padding: 10px;
+  margin: 0 auto;
+  width: 400px;
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+  font-weight: normal;
+}

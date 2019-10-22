@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <link href="ex_2_style.css" rel="stylesheet">
+  <title>Equações do Segund Grau</title>
+</head>
+
+<body>
+  <h1>Resolver Equações do Segundo Grau</h1>
+  <p>Digite os valores de a, b e c.</p>
+  <form class="formClass" name="equacaoForm" method="POST" action="">
+    <input type="number" name="a"> x² +
+    <input type="number" name="b"> x +
+    <input type="number" name="c"> = 0
+
+    <br><br>
+    <input type="button" value="Calcular"
+      onclick="calcular(equacaoForm.a.value, equacaoForm.b.value, equacaoForm.c.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+
+  <div id="resposta">
+  </div>
+
+  <script src="ex_2_script.js"></script>
+</body>
+
+</html>

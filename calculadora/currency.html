@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles/main.css" rel="stylesheet">
+  <script src="scripts/scripts.js"></script>
+
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+  <a href="oneOperator.html">1 operando</a>
+  <a href="twoOperators.html">2 operandos</a>
+  <a href="currency.html">Conversor de Moedas</a>
+  <a href="bases.html">Conversor de Bases</a>
+  <a href="help.html">Ajuda</a>
+
+  <h2>Conversor de Moedas</h2>
+
+  <form action="" name="currency">
+    <table align="center">
+      <tr>
+        <td>
+          <h4>Valor:</h4>
+          <input type="text" name="valor">
+        </td>
+        <td>
+          <h4>Cotações:</h4>
+        </td>
+        <td>
+          <h4>US$</h4>
+          <input type="text" name="dolar">
+        </td>
+        <td>
+          <h4>Euro €</h4>
+          <input type="text" name="euro">
+        </td>
+      </tr>
+      <tr align="left">
+        <td>
+          <input type="radio" name="currencyType" value="real-dolar">R$ -> US$
+        </td>
+        <td>
+          <input type="radio" name="currencyType" value="dolar-real">US$ -> R$
+        </td>
+      </tr>
+      <tr align="left">
+        <td>
+          <input type="radio" name="currencyType" value="real-euro">R$ -> Euro €
+        </td>
+        <td>
+          <input type="radio" name="currencyType" value="euro-real">Euro € -> R$
+        </td>
+      </tr>
+    </table>
+
+    <h4>Resultado:</h4>
+    <div class="resposta-box">
+      <span id="result"></span>
+    </div>
+    <input type="button" value="Executar"
+      onclick="convertCurrency(currency.valor.value, currency.dolar.value, currency.euro.value, currency.currencyType.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+</body>
+
+</html>

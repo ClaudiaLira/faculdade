@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color: beige;
+  color: brown;
+  max-width: 640px;
+  margin: auto;
+}
+
+h4 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.resposta-box {
+  text-align: left;
+  border: 1px solid;
+  width: auto;
+  height: 30px;
+  padding: 10px;
+}
+
+.entryValue1 {
+  text-align: left;
+}
+
+table {
+  min-width: 300px;
+}
+
+.operator-select {
+  display: block;
+  margin-top: 37px;
+}
+
+.help-link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}

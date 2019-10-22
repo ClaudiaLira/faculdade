@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles/main.css" rel="stylesheet">
+  <script src="scripts/scripts.js"></script>
+
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+  <a href="oneOperator.html">1 operando</a>
+  <a href="twoOperators.html">2 operandos</a>
+  <a href="currency.html">Conversor de Moedas</a>
+  <a href="bases.html">Conversor de Bases</a>
+  <a href="help.html">Ajuda</a>
+
+  <h2>1 Operando</h2>
+
+  <form action="" name="oneOperator">
+    <div class="entryValue1">
+      <h4>Valor: </h4>
+      <input type="text" name="valor">
+    </div>
+
+    <table align="center">
+      <tr align="left">
+        <td>
+          <input type="radio" name="operation" value="fatorial">x!
+        </td>
+        <td>
+          <input type="radio" name="operation" value="raiz">&radic;<span style="text-decoration:overline">x</span>
+        </td>
+      </tr>
+      <tr align="left">
+        <td>
+          <input type="radio" name="operation" value="quadrado">x<sup>2</sup>
+        </td>
+        <td>
+          <input type="radio" name="operation" value="seno">sen(x)
+        </td>
+      </tr>
+      <tr align="left">
+        <td>
+          <input type="radio" name="operation" value="cubo">x<sup>3</sup>
+        </td>
+        <td>
+          <input type="radio" name="operation" value="inverso"><sup>1</sup>&frasl;<sub>x</sub>
+        </td>
+      </tr>
+    </table>
+
+    <h4>Resposta:</h4>
+    <div class="resposta-box">
+      <span id="resposta"></span>
+    </div>
+    <input type="button" value="Executar" onclick="calcular(oneOperator.operation.value, oneOperator.valor.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+</body>
+
+</html>

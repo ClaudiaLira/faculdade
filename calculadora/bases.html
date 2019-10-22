@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles/main.css" rel="stylesheet">
+  <script src="scripts/scripts.js"></script>
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+  <a href="oneOperator.html">1 operando</a>
+  <a href="twoOperators.html">2 operandos</a>
+  <a href="currency.html">Conversor de Moedas</a>
+  <a href="bases.html">Conversor de Bases</a>
+  <a href="help.html">Ajuda</a>
+
+  <h2>Conversor de Bases</h2>
+
+  <form action="" name="convertBases">
+    <div class="entryValue1">
+      <h4>Valor: </h4>
+      <input type="text" name="valor">
+    </div>
+
+    <div style="text-align: left;">
+      <input type="radio" name="base" value="decBin">Dec -> Bin
+      </br></br>
+      <input type="radio" name="base" value="decHex">Dec -> Hex
+      </br></br>
+      <input type="radio" name="base" value="binDec">Bin -> Dec
+      </br></br>
+      <input type="radio" name="base" value="hexDec">Hex -> Dec
+    </div>
+
+    <h4>Resposta:</h4>
+    <div class="resposta-box">
+      <span id="result"></span>
+    </div>
+    <input type="button" value="Executar" onclick="convertToFrom(convertBases.valor.value, convertBases.base.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+</body>
+
+</html>

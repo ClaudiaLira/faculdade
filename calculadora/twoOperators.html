@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles/main.css" rel="stylesheet">
+  <script src="scripts/scripts.js"></script>
+
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+  <a href="oneOperator.html">1 operando</a>
+  <a href="twoOperators.html">2 operandos</a>
+  <a href="currency.html">Conversor de Moedas</a>
+  <a href="bases.html">Conversor de Bases</a>
+  <a href="help.html">Ajuda</a>
+
+  <h2>2 Operandos</h2>
+  <form action="" name="twoOperators">
+
+    <!-- <br><br> -->
+    <table align="center">
+      <tr>
+        <td>
+          <h4>Valor 1: </h4>
+          <input type="text" name="valor1">
+        </td>
+        <td class="operator-select">
+          <select name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="mod">mod</option>
+          </select>
+        </td>
+        <td>
+          <h4>Valor 2: </h4>
+          <input type="text" name="valor2">
+        </td>
+      </tr>
+    </table>
+
+    <h4>Resposta:</h4>
+    <div class="resposta-box">
+      <span id="resposta"></span>
+    </div>
+    <input type="button" value="Executar"
+      onclick="calcular(twoOperators.operator.value, twoOperators.valor1.value, twoOperators.valor2.value)">
+    <input type="reset" value="Limpar" onclick="limpar()">
+  </form>
+</body>
+
+</html>

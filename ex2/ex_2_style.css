@@ -1,0 +1,29 @@
+.formClass {
+  padding: 10px;
+  background-color: blanchedalmond;
+  margin: 0 auto;
+  width: 640px;
+}
+
+body {
+  text-align: center;
+  color: brown;
+
+}
+
+input[type="number"] {
+  text-align: right;
+  width: 40px;
+}
+
+#resposta {
+  padding: 10px;
+  margin: 0 auto;
+  width: 400px;
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+  font-weight: normal;
+}
